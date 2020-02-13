@@ -2,7 +2,7 @@ import { Title } from '@angular/platform-browser';
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { LazyLoadEvent, ConfirmationService } from 'primeng/components/common/api';
-import { MessageService } from 'primeng/components/common/messageservice';
+import { MessageService } from 'primeng/api';
 
 import { AuthService } from './../../seguranca/auth.service';
 import { ErrorHandlerService } from './../../core/error-handler.service';
