@@ -8,7 +8,7 @@ import localePt from '@angular/common/locales/pt';
 import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
-import { GrowlModule } from 'primeng/primeng';
+import { ToastModule } from 'primeng/toast';
 import { JwtHelperService } from '@auth0/angular-jwt';
 
 import { AuthService } from './../seguranca/auth.service';
@@ -34,7 +34,7 @@ registerLocaleData(localePt);
     HttpClientModule,
     RouterModule,
 
-    GrowlModule,
+    ToastModule,
     ConfirmDialogModule,
   ],
   declarations: [
@@ -44,7 +44,7 @@ registerLocaleData(localePt);
   ],
   exports: [
     NavbarComponent,
-    GrowlModule,
+    ToastModule,
     ConfirmDialogModule
   ],
   providers: [
