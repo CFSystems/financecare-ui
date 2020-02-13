@@ -8,8 +8,7 @@
       <div class="ui-g-12 ui-md-6 ui-fluid" formGroupName="conta">
         <label>Conta</label>
         <p-dropdown name="conta" [options]="contas"
-          placeholder="Selecione" [autoWidth]="false"
-          formControlName="codigo"></p-dropdown>
+          placeholder="Selecione" formControlName="codigo"></p-dropdown>
       </div>
 
       <div class="ui-g-12">
@@ -36,7 +35,7 @@
       <div class="ui-g-12 ui-md-3 ui-fluid" formGroupName="formaPagamento">
         <label>Forma de Pagamento</label>
         <p-dropdown name="formaPagamento" [options]="formasPagamento"
-          placeholder="Selecione" [autoWidth]="false" formControlName="codigo"></p-dropdown>
+          placeholder="Selecione" formControlName="codigo"></p-dropdown>
       </div>
 
       <div class="ui-g-12 ui-md-3 ui-fluid">
@@ -49,21 +48,21 @@
       <div class="ui-g-12 ui-md-4 ui-fluid" formGroupName="categoria">
         <label>Categoria</label>
         <p-dropdown name="categoria" [options]="categorias"
-          placeholder="Selecione" [autoWidth]="false" [filter]="true"
+          placeholder="Selecione" [filter]="true"
           formControlName="codigo"></p-dropdown>
       </div>
 
       <div class="ui-g-12 ui-md-4 ui-fluid" formGroupName="subCategoria">
         <label>Sub-Categoria</label>
         <p-dropdown name="subCategoria" [options]="subCategorias"
-          placeholder="Selecione" [autoWidth]="false" [filter]="true"
+          placeholder="Selecione" [filter]="true"
           formControlName="codigo"></p-dropdown>
       </div>
 
       <div class="ui-g-12 ui-md-4 ui-fluid" formGroupName="pessoa">
         <label>Pessoa</label>
         <p-dropdown name="pessoa" [options]="pessoas" placeholder="Selecione"
-          [autoWidth]="false" [filter]="true" formControlName="codigo"></p-dropdown>
+          [filter]="true" formControlName="codigo"></p-dropdown>
       </div>
 
       <div class="ui-g-12 ui-fluid">
