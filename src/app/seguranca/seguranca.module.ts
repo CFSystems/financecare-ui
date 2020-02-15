@@ -28,9 +28,9 @@ export function tokenGetter() {
         blacklistedRoutes: environment.tokenBlacklistedRoutes
       }
     }),
+
     InputTextModule,
     ButtonModule,
-
 
     SegurancaRoutingModule
   ],
