@@ -1,9 +1,11 @@
 <div class="container">
+  
+  
   <form autocomplete="off" (ngSubmit)="salvar()" [formGroup]="formulario">
     <div class="ui-g">
-      <div class="ui-g-12">
-        <h1>{{ editando ? 'Edição de' : 'Novo' }} Lançamento</h1>
-      </div>
+      <!--<div class="ui-g-12">
+        <h1>{{ editando ? 'Edição de' : 'Novo' }} Lançamento {{ idLancamento }}</h1>
+      </div>-->
 
       <div class="ui-g-12 ui-md-6 ui-fluid" formGroupName="conta">
         <label>Conta</label>
@@ -102,9 +104,10 @@
 
       <div class="ui-g-12">
         <button pButton type="submit" label="Salvar" [disabled]="formulario.invalid || uploadEmAndamento"></button>
-        <button pButton type="button" label="Novo" class="ui-button-info"
+        <!--<button pButton type="button" label="Novo" class="ui-button-info"
           (click)="novo()"></button>
-        <a routerLink="/lancamentos">Voltar para a pesquisa</a>
+        
+          <a routerLink="/lancamentos">Voltar para a pesquisa</a>-->
       </div>
     </div>
   </form>

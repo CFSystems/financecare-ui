@@ -5,8 +5,9 @@
 
 export const environment = {
   production: false,
+  envName: 'dev',
   apiUrl: 'http://localhost:9090',
 
   tokenWhitelistedDomains: ['localhost:9090'],
-  tokenBlacklistedRoutes: ['\/oauth\/token']
+  tokenBlacklistedRoutes: ['localhost:9090/oauth/token']
 };

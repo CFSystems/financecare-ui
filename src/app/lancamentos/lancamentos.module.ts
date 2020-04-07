@@ -13,6 +13,7 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { DialogModule } from 'primeng/dialog';
 
 import { LancamentosRoutingModule } from './lancamentos-routing.module';
 import { SharedModule } from './../shared/shared.module';
@@ -36,6 +37,7 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     CurrencyMaskModule,
     FileUploadModule,
     ProgressSpinnerModule,
+    DialogModule,
 
     SharedModule,
     LancamentosRoutingModule

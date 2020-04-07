@@ -3,5 +3,5 @@ export const environment = {
   apiUrl: 'https://financecare-api.herokuapp.com',
 
   tokenWhitelistedDomains: ['financecare-api.herokuapp.com'],
-  tokenBlacklistedRoutes: ['\/oauth\/token']
+  tokenBlacklistedRoutes: ['financecare-api.herokuapp.com/oauth/token']
 };

@@ -15,6 +15,8 @@ import { LancamentoService, LancamentoFiltro } from './../lancamento.service';
 })
 export class LancamentosPesquisaComponent implements OnInit {
 
+  display: boolean;
+  idLancamento: number;
   totalRegistros = 0;
   filtro = new LancamentoFiltro();
   lancamentos = [];
@@ -33,8 +35,21 @@ export class LancamentosPesquisaComponent implements OnInit {
     this.title.setTitle('Pesquisa de lançamentos');
   }
 
+  showDialog(codigo: number) {
+    this.display = true;
+    this.idLancamento = codigo;
+  }
+
+  closeDialog(display: boolean) {
+    this.display = display;
+    this.pesquisar();
+  }
+
   pesquisar(pagina = 0) {
     this.filtro.pagina = pagina;
+    if (this.filtro.pagina === 0) {
+      this.grid.first = 0;
+    }
 
     this.lancamentoService.pesquisar(this.filtro)
       .then(resultado => {
